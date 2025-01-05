@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Inter;
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+:root {
+    /* color */
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+    /* space */
+    --space-400: 32px;
+    --space-350: 28px;
+    --space-300: 24px;
+    --space-250: 20px;
+    --space-200: 16px;
+    --space-150: 12px;
+    --space-100: 8px;
+    --space-50: 4px;
+
+    /* font-weight */
+    --font-normal: 400;
+    --font-semi-bold: 600;
+    --font-extra-bold: 800;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+body {
+    font-family: Inter;
+    font-weight: var(--font-normal);
+    font-size: 14px;
+    height: 100vh;
+    color: var(--white)
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-900);
+}
+
+.card {
+    width: 375px;
+    background-color: var(--grey-800);
+    padding: var(--space-400);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-300)
+}
+
+.author__img {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.author__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.author__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-100)
+}
+
+.author__name {
+    font-size: 1.5rem;
+    font-weight: var(--font-semi-bold);
+}
+
+.author__address {
+    color: var(--green);
+    font-weight: var(--font-semi-bold);
+}
+
+.author__links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-200);
+}
+
+.link__item {
+    display: inline-block;
+    width: 100%;
+    font-weight: var(--font-semi-bold);
+    background-color: var(--grey-700);
+    text-align: center;
+    border-radius: 10px;
+    padding: var(--space-200) var(--space-350);
+    transition: all 0.2s ease-in-out;
+}
+
+.link__item:hover {
+    color: var(--grey-900);
+    background-color: var(--green);
+}
