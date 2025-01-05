@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://paikai-lee.github.io/social_links_profile/)
 
 ## My process
 
